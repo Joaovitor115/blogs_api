@@ -12,11 +12,12 @@ module.exports = (sequelize, DataTypes) => {
       password: DataTypes.STRING,
       email: DataTypes.STRING,
       image: DataTypes.STRING,
-      display_name: DataTypes.STRING
+      displayName: DataTypes.STRING
     },
     {
       timestamps: false,
       tableName: 'users',
+      underscored: true
     },
   );
 
