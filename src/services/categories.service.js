@@ -14,11 +14,11 @@ const createCategory = async (data) => {
   }
 };
 
-const getAll = () => Category.findAll({ attributes: { exclude: ['password'] } });
+const getAllCategories = () => Category.findAll();
 const getOne = (id) => Category.findOne({ attributes: { exclude: ['password'] }, where: { id } });
 
 module.exports = {
   createCategory,
-  getAll,
+  getAllCategories,
   getOne,
 };
