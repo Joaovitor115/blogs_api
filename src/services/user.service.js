@@ -18,9 +18,11 @@ const createUser = async (data) => {
 };
 
 const getAll = () => User.findAll({ attributes: { exclude: ['password'] } });
+const getOne = (id) => User.findOne({ attributes: { exclude: ['password'] }, where: { id } });
 
 module.exports = {
   Login,
   createUser,
   getAll,
+  getOne,
 };
