@@ -10,7 +10,7 @@ const createCategory = async (data) => {
 
     return { user: user.dataValues, type: '' };
   } catch (error) {
-    return { type: error, message: '\"name\" is required' };
+    return { type: error, message: '"name" is required' };
   }
 };
 
