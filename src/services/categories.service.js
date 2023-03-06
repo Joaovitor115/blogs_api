@@ -13,7 +13,6 @@ const createCategory = async (data) => {
     return { type: error, message: '"name" is required' };
   }
 };
-
 const getAllCategories = () => Category.findAll();
 const getOne = (id) => Category.findOne({ attributes: { exclude: ['password'] }, where: { id } });
 
